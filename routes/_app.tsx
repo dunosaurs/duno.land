@@ -54,6 +54,20 @@ export default function App(props: AppProps) {
           name="twitter:image"
           content="https://duno.land/android-chrome-512x512.png"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZRFHT2M79D"
+        >
+        </script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZRFHT2M79D');
+        `}
+        </script>
       </Head>
       <props.Component />
     </>
