@@ -33,7 +33,7 @@ export default function Home() {
       <section
         class={tw`mx-auto border-b py-16 px-4 max-w-2xl flex flex-col gap-4`}
       >
-        <h2 class={tw`text-3xl`}>A few words about duno.land</h2>
+        <h2 class={tw`text-3xl text-center flex flex-col sm:flex-row items-center gap-4`}>A few words about duno.land  <iframe src="https://ghbtns.com/github-btn.html?user=lino-levan&repo=duno.land&type=star&count=true&size=large" scrolling="0" width="170" height="30" title="GitHub" /></h2>
         <p>
           The javascript community, and I personally, really want to see Deno
           succeed. This site is not intended to "dunk" on Deno in any way. It's
@@ -224,7 +224,7 @@ export default function Home() {
         </p>
         <p>•</p>
         <p>
-          <a class={tw`underline`} href="https://linolevan.com/blog">
+          <a class={tw`underline`} href="https://linolevan.com/blog/duno_land_announcement">
             The blog post that started it all.
           </a>
         </p>
