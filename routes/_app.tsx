@@ -39,6 +39,17 @@ export default function App(props: AppProps) {
           property="og:image"
         />
         <meta content="#b31515" data-react-helmet="true" name="theme-color" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="Duno.land" />
+        <meta name="twitter:title" content="Duno.land" />
+        <meta
+          name="twitter:description"
+          content="The javascript community, and I personally, really want to see Deno succeed. This site is not intended to 'dunk' on Deno in any way. It's simply my way of listing what I see as its current shortcoming"
+        />
+        <meta
+          name="twitter:image"
+          content="https://duno.land/android-chrome-512x512.png"
+        />
       </Head>
       <props.Component />
     </>
