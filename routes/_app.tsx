@@ -27,6 +27,18 @@ export default function App(props: AppProps) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ffffff" />
+        <title>Duno.land</title>
+        <meta content="Duno.land" property="og:title" />
+        <meta
+          content="The javascript community, and I personally, really want to see Deno succeed. This site is not intended to 'dunk' on Deno in any way. It's simply my way of listing what I see as its current shortcomings and what I hope it can improve on."
+          property="og:description"
+        />
+        <meta content="https://duno.land" property="og:url" />
+        <meta
+          content="https://duno.land/android-chrome-512x512.png"
+          property="og:image"
+        />
+        <meta content="#b31515" data-react-helmet="true" name="theme-color" />
       </Head>
       <props.Component />
     </>
