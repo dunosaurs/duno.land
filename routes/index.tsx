@@ -1,39 +1,36 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
 import { ListOfShame } from "../components/ListOfShame.tsx";
 
 export default function Home() {
   return (
-    <div class={tw``}>
+    <div class="">
       <section
-        class={tw`w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200`}
+        class="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200"
       >
         <img
           src="/logo.svg"
           width="200px"
           alt="the deno logo but in red"
         />
-        <h1 class={tw`my-6 text-4xl text-center`}>
+        <h1 class="my-6 text-4xl text-center">
           Welcome to duno.land
         </h1>
-        <p class={tw`text-lg text-center`}>
+        <p class="text-lg text-center">
           Why Deno might not be ready for you
         </p>
       </section>
       <section
-        class={tw`bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 relative h-8`}
+        class="bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 relative h-8"
       >
         <img
           src="/assets/wave.svg"
-          class={tw`w-full min-w-lg absolute -bottom-1`}
+          class="w-full min-w-lg absolute -bottom-1"
           alt="a small wave graphic"
         />
       </section>
       <section
-        class={tw`mx-auto border-b py-16 px-4 max-w-2xl flex flex-col gap-4`}
+        class="mx-auto border-b py-16 px-4 max-w-2xl flex flex-col gap-4"
       >
-        <h2 class={tw`text-3xl text-center flex flex-col sm:flex-row items-center gap-4`}>A few words about duno.land  <iframe src="https://ghbtns.com/github-btn.html?user=lino-levan&repo=duno.land&type=star&count=true&size=large" scrolling="0" width="170" height="30" title="GitHub" /></h2>
+        <h2 class="text-3xl text-center flex flex-col sm:flex-row items-center gap-4">A few words about duno.land  <iframe src="https://ghbtns.com/github-btn.html?user=lino-levan&repo=duno.land&type=star&count=true&size=large" scrolling="0" width="170" height="30" title="GitHub" /></h2>
         <p>
           The javascript community, and I personally, really want to see Deno
           succeed. This site is not intended to "dunk" on Deno in any way. It's
@@ -56,10 +53,10 @@ export default function Home() {
         </p>
       </section>
       <section
-        class={tw`mx-auto border-b py-16 px-4 max-w-2xl flex flex-col gap-4`}
+        class="mx-auto border-b py-16 px-4 max-w-2xl flex flex-col gap-4"
       >
-        <h2 id="core-issues" class={tw`text-3xl`}>Core Issues</h2>
-        <h3 id="deno-is-slow" class={tw`text-2xl`}>Deno is slow</h3>
+        <h2 id="core-issues" class="text-3xl">Core Issues</h2>
+        <h3 id="deno-is-slow" class="text-2xl">Deno is slow</h3>
         <p>
           Deno is currently sluggish in comparison to Node and especially in
           comparison to something like Go.
@@ -67,7 +64,7 @@ export default function Home() {
         <p>
           According to{" "}
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://subscription.packtpub.com/book/web-development/9781800205666/2/ch02lvl1sec06/grasping-deno-s-limitations"
           >
             this article
@@ -76,7 +73,7 @@ export default function Home() {
         <p>
           One of the{" "}
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://github.com/denoland/deno/issues/5436"
           >
             major decisions that Deno made
@@ -86,15 +83,15 @@ export default function Home() {
           application leaves a lot to be desired.
         </p>
         <p>
-          With <a class={tw`underline`} href="https://bun.sh">bun.sh</a>{" "}
+          With <a class="underline" href="https://bun.sh">bun.sh</a>{" "}
           taking the performance crown handily. This becomes very important for
           the future of Deno.
         </p>
-        <h3 id="deno-isnt-stable" class={tw`text-2xl`}>Deno isn't stable</h3>
+        <h3 id="deno-isnt-stable" class="text-2xl">Deno isn't stable</h3>
         <p>
           Deno's standard library{" "}
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://deno.land/manual@v1.24.3/runtime/stability"
           >
             isn't stable yet
@@ -107,7 +104,7 @@ export default function Home() {
           None of this is to mention that there are parts of the Deno namespace
           that are still unstable.
         </p>
-        <h3 id="deno-isnt-mature" class={tw`text-2xl`}>Deno isn't mature</h3>
+        <h3 id="deno-isnt-mature" class="text-2xl">Deno isn't mature</h3>
         <p>
           People say this a lot but I want to be a little more concrete about
           it. One way I find to check really quickly if something is mature is
@@ -117,7 +114,7 @@ export default function Home() {
         </p>
         <p>
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://github.com/denoland/deno/issues/9795"
           >
             Remove pure JS (non native) io functions from Deno namespace
@@ -129,7 +126,7 @@ export default function Home() {
         </p>
         <p>
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://github.com/denoland/deno/issues/5501"
           >
             Detached processes in deno
@@ -140,7 +137,7 @@ export default function Home() {
         </p>
         <p>
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://github.com/denoland/deno/issues/5501"
           >
             Lockfile should be written by default
@@ -152,7 +149,7 @@ export default function Home() {
         </p>
         <p>
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://github.com/denoland/deno/issues/11186"
           >
             Default to h and Fragment for JSX
@@ -165,16 +162,16 @@ export default function Home() {
           That's enough of that. We're going to move on to the community issues.
         </p>
       </section>
-      <section class={tw`mx-auto py-16 px-4 max-w-2xl flex flex-col gap-4`}>
-        <h2 id="community-issues" class={tw`text-3xl`}>Community Issues</h2>
-        <h3 id="stack-overflow" class={tw`text-2xl`}>Stack Overflow</h3>
+      <section class="mx-auto py-16 px-4 max-w-2xl flex flex-col gap-4">
+        <h2 id="community-issues" class="text-3xl">Community Issues</h2>
+        <h3 id="stack-overflow" class="text-2xl">Stack Overflow</h3>
         <p>
           Deno has nearly no Stack Overflow history, especially in comparison to
           Node.
         </p>
         <p>
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://stackoverflow.com/search?q=deno"
           >
             A search for Deno on SO
@@ -183,7 +180,7 @@ export default function Home() {
         </p>
         <p>
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://stackoverflow.com/search?q=node"
           >
             In node?
@@ -194,7 +191,7 @@ export default function Home() {
           If you have a problem with Deno, there is a very high likelyhood that
           you will be the first person on the internet with that specific issue.
         </p>
-        <h3 id="module-ecosystem" class={tw`text-2xl`}>Module Ecosystem</h3>
+        <h3 id="module-ecosystem" class="text-2xl">Module Ecosystem</h3>
         <p>
           Everyone knew this was going to be brought up at some point. Deno does
           not have nearly the same module support as Node. While the --compat
@@ -206,17 +203,17 @@ export default function Home() {
           aren't they go on the list of shame. Feel free to contribute on our
           github.
         </p>
-        <h3 id="list-of-shame" class={tw`text-2xl`}>List of Shame</h3>
+        <h3 id="list-of-shame" class="text-2xl">List of Shame</h3>
         <ListOfShame />
         <p>
           This list is up to date as of 22/08/2022.
         </p>
       </section>
-      <footer class={tw`bg-coolGray-100 px-4 py-8 flex justify-center gap-4`}>
+      <footer class="bg-coolGray-100 px-4 py-8 flex justify-center gap-4">
         <p>
           Have anything to contribute? Check out{" "}
           <a
-            class={tw`underline`}
+            class="underline"
             href="https://github.com/lino-levan/duno.land"
           >
             our github
@@ -224,7 +221,7 @@ export default function Home() {
         </p>
         <p>•</p>
         <p>
-          <a class={tw`underline`} href="https://linolevan.com/blog/duno_land_announcement">
+          <a class="underline" href="https://linolevan.com/blog/duno_land_announcement">
             The blog post that started it all.
           </a>
         </p>

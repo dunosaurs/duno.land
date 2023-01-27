@@ -1,7 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
-
 const listOfShame = [
   ["Playwright", "https://github.com/microsoft/playwright/issues/3146"],
   ["Vite", "https://github.com/vitejs/vite/issues/109"],
@@ -15,7 +11,7 @@ export function ListOfShame() {
     <ul>
       {listOfShame.map((item) => (
         <li>
-          - <a class={tw`underline`} href={item[1]}>{item[0]}</a>
+          - <a class="underline" href={item[1]}>{item[0]}</a>
         </li>
       ))}
     </ul>
