@@ -57,7 +57,7 @@ export default function Home() {
           </div>
           <div class="border p-2 rounded">
             <h3 class="text-xl underline">
-              <a href="https://github.com/dunosaurs/color">x/slug</a>
+              <a href="https://github.com/dunosaurs/slug">x/slug</a>
             </h3>
             <p>
               Deno library for converting arbitrary strings into valid slugs
